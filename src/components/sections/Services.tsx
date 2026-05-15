@@ -1,11 +1,21 @@
-import { ServiceCard } from "../ui/ServiceCard";
+"use client";
 
-export default function Services() {
+import { motion } from "framer-motion";
+
+export function ServiceCard({
+  title,
+  desc,
+}: {
+  title: string;
+  desc: string;
+}) {
   return (
-    <section className="py-20 px-6 grid md:grid-cols-3 gap-6">
-      <ServiceCard title="Mentorship" desc="Learn forex step by step" />
-      <ServiceCard title="Signals" desc="Daily trade signals" />
-      <ServiceCard title="Community" desc="Join elite traders" />
-    </section>
+    <motion.div
+      whileHover={{ y: -10 }}
+      className="p-6 rounded-2xl bg-white/5 border border-white/10"
+    >
+      <h3 className="text-xl font-bold">{title}</h3>
+      <p className="text-gray-400 mt-2">{desc}</p>
+    </motion.div>
   );
 }
