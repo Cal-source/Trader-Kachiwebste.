@@ -15,13 +15,13 @@ const testimonials = [
     name: "Michael T.",
     result: "Improved confidence and execution",
     text: "The live market analysis helped me understand real trade setups instead of gambling on signals."
-  }
+  },
 
-{
-  name: "Emeka O.",
-  result: "Finally became consistently profitable",
-  text: "I used to jump from strategy to strategy without results. Trader Kachi helped me understand patience, structure, and proper entries."
-}
+  {
+    name: "Emeka O.",
+    result: "Finally became consistently profitable",
+    text: "I used to jump from strategy to strategy without results. Trader Kachi helped me understand patience, structure, and proper entries."
+  }
 ];
 
 export default function Testimonials() {
