@@ -9,9 +9,8 @@ export default function Navbar() {
 
         <nav className="hidden md:flex gap-6 text-gray-300">
           <a href="#services" className="hover:text-white">Services</a>
-          <a href="#proof" className="hover:text-white">Results</a>
+          <a href="#testimonials" className="hover:text-white">Results</a>
           <a href="#cta" className="hover:text-white">Join</a>
-          <a href="#testimonials">Results</a>
         </nav>
 
         <button className="bg-green-500 px-4 py-2 rounded-xl font-semibold">
