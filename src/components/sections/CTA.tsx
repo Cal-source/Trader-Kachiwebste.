@@ -20,7 +20,13 @@ export default function CTA() {
           <button className="border border-white/20 hover:bg-white/10 transition px-8 py-4 rounded-2xl text-lg">
             View Student Results
           </button>
-
+<a
+  href="https://wa.me/2347034627030"
+  target="_blank"
+  className="bg-green-500 px-8 py-4 rounded-2xl font-semibold"
+>
+  Join on WhatsApp
+</a>
         </div>
 
         <p className="text-gray-500 mt-8 text-sm">
