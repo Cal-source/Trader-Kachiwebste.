@@ -1,6 +1,6 @@
 export default function Problem() {
   return (
-    <section className="py-24 px-6 text-center bg-red-500/5 border-y border-red-500/10">
+    <section id="problem" className="py-24 px-6 text-center bg-red-500/5 border-y border-red-500/10">
       <div className="max-w-3xl mx-auto">
 
         <h2 className="text-4xl font-bold">
