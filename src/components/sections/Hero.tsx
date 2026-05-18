@@ -1,40 +1,47 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center text-center px-6">
-      <div className="max-w-3xl">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
 
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(10,132,255,0.2),_transparent_60%)]" />
+
+      {/* Main Content */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="relative z-10 max-w-3xl"
+      >
         <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-          Master Forex Trading with a Proven System
+          Trade Smarter. Build Wealth. <br />
+          <span className="text-primary">With Trader Kachi</span>
         </h1>
 
-        <p className="text-gray-300 mt-6 text-lg">
-          Join Trader Kachi mentorship and learn how to trade consistently with structure, risk management, and real market strategy.
+        <p className="text-gray-400 mt-6 text-lg">
+          Join an elite forex mentorship system designed to turn beginners
+          into consistent, disciplined traders.
         </p>
 
-        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-
-          {/* PRIMARY BUTTON (GREEN CTA) */}
-          <a
-            href="https://wa.me/234XXXXXXXXXX"
-            target="_blank"
-            className="bg-green-500 px-6 py-3 rounded-xl font-semibold 
-                       hover:scale-105 hover:bg-green-400 
-                       transition-all duration-300 shadow-lg"
-          >
-            Join Mentorship
-          </a>
-
-          {/* SECONDARY BUTTON */}
-          <button
-            className="border border-white/20 px-6 py-3 rounded-xl 
-                       hover:scale-105 hover:bg-white/10 
-                       transition-all duration-300"
-          >
-            Watch Results
+        {/* CTA Buttons */}
+        <div className="mt-10 flex gap-4 justify-center">
+          <button className="bg-primary px-6 py-3 rounded-xl font-medium hover:scale-105 transition">
+            Join Community
           </button>
 
+          <button className="border border-white/20 px-6 py-3 rounded-xl hover:bg-white/5 transition">
+            Learn More
+          </button>
         </div>
-      </div>
+
+        {/* Trust Line */}
+        <p className="text-xs text-gray-500 mt-6">
+          Trusted by upcoming traders across Nigeria & beyond
+        </p>
+      </motion.div>
     </section>
   );
 }
