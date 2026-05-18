@@ -67,6 +67,35 @@ return (
 </header>
 
 );
+}    </nav>
+
+    {/* Mobile Menu Button */}
+    <button
+      onClick={() => setIsOpen(!isOpen)}
+      className="md:hidden text-white"
+    >
+      {isOpen ? <X size={28} /> : <Menu size={28} />}
+    </button>
+  </div>
+
+  {/* Mobile Menu */}
+  {isOpen && (
+    <div className="md:hidden border-t border-white/10 bg-black/95 px-6 py-6 flex flex-col gap-6">
+      {navLinks.map((link) => (
+        <Link
+          key={link.name}
+          href={link.href}
+          onClick={() => setIsOpen(false)}
+          className="text-gray-300 hover:text-white text-lg"
+        >
+          {link.name}
+        </Link>
+      ))}
+    </div>
+  )}
+</header>
+
+);
 }              href={link.href}
               className="text-sm text-gray-300 hover:text-white transition-colors"
             >
