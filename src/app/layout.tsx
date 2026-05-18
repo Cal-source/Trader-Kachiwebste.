@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "@/components/shared/Navbar";
 
 export const metadata = {
   title: "Trader Kachi",
@@ -13,7 +14,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-background text-white">
-        {children}
+        <Navbar />
+        <main className="pt-24">
+          {children}
+        </main>
       </body>
     </html>
   );
