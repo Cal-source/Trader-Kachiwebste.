@@ -39,11 +39,11 @@ return (
 
     {/* Mobile Button (NO ICON LIBRARY) */}
     <button
-      onClick={() => setIsOpen(!isOpen)}
-      className="md:hidden text-white text-sm border border-white/20 px-3 py-1 rounded-md"
-    >
-      {isOpen ? "Close" : "Menu"}
-    </button>
+  onClick={() => setIsOpen(!isOpen)}
+  className="md:hidden text-white text-sm px-4 py-2 rounded-md bg-black/70 border border-white/30"
+>
+  {isOpen ? "Close" : "Menu"}
+</button>
 
   </div>
 
